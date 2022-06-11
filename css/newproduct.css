@@ -1,0 +1,225 @@
+.item_header_new_product{
+    width: 88%;
+    margin: auto;
+}
+
+.item_content_header_nproduct{
+    padding: 30px 0px 0px 0px;
+    font-size: smaller;
+}
+
+.item_content_header_nproduct > a{
+    color: black ;
+}
+
+.item_content_header_nproduct > a:hover{
+    color: #f08b18;
+}
+
+.item_content_header_nproduct > i{
+    opacity: 0.5;
+    font-size: smaller;
+    padding: 0px 5px;
+}
+
+.item_content_header_nproduct span{
+    color: #f08b18 ;
+}
+
+.item_content_detail_product{
+    width: 88%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+.item_head_product_new_product{
+    display: flex;
+    justify-content: space-between;
+}
+
+.item_head_product_new_product p{
+    font-size: 32px;
+    opacity: 0.8;
+}
+
+.item_head_product_new_product > span{
+    line-height: 36.25px;
+    padding-right: 10px;
+}
+
+.item_head_product_new_product > span > select{
+    padding: 5px 10px;
+    font-size: .9rem;
+    border-radius: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.flast_ship{
+    border-radius: 20px;
+    padding: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1) !important;
+}
+
+.category{
+    width: 100%;
+}
+
+.seach_price{
+    width: 88%;
+    margin: auto;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    position: relative;
+}
+
+.seach_price > i{
+    float: right;
+    padding-right: 10px;
+    position: absolute;
+    right: 0;
+    top: 25%;
+    font-size: smaller;
+    opacity: 0.8;
+}
+.seach_price > input{
+    padding: 12px;
+    position: relative;
+    outline: none;
+    border: none;
+}
+
+.price_product_new_product div{
+    max-width: 88%;
+    margin: auto;
+    font-size: smaller;
+    opacity: 0.9;
+    padding: 20px 20px 20px 0px;
+}
+
+.price_product_new_product div span{
+    padding-left: 10px;
+}
+.price_product_new_product div:hover{
+    color: #f08b18;
+}
+
+.price_product_new_product div input:hover{
+    color: #f08b18;
+    background-color: #f08b18;
+}
+
+.content_category > #icon_check{
+    border: 1px solid #ebebeb;
+    border-radius: 50%; 
+    width: 15px;
+    color: #fff;
+    text-align: center;
+    height: 15px;
+    right: auto;
+    left: 0;
+    font-size: 15px;
+    padding-right: 5px;
+}
+
+.content_category:hover #icon_check{
+    color: #fff !important;
+}
+
+.content_category:last-child #icon_check{
+    color: black;
+}
+.content_category:last-child:hover #icon_check{
+    color: #f08b18 !important;
+}
+
+.page_pdroduct{
+    display: flex;
+    text-align: center;
+    margin-top: 50px;
+    justify-content: center;
+    overflow: hidden;
+    
+}
+
+.page_pdroduct a{
+    text-decoration: none;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    color: rgba(0, 0, 0, 0.8);
+    margin: 0px 5px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    transition: all 0.2s linear ;
+}
+
+.page_pdroduct i{
+    font-size: smaller;
+}
+
+.page_pdroduct a:hover{
+    background-color: #f08b18;
+    color: #ebebeb;
+}
+.page_pdroduct a:first-child{
+    background-color: #f08b18;
+    color: #ebebeb;
+}
+
+#item_icon_open_menu{
+    display: none;
+}
+
+#item_icon_close_menu{
+    display: none;
+}
+@media screen and (max-width:69.5em){
+   .show_menu_new_roduct{
+       position: fixed;
+       top:0;
+       right: 37%;
+       bottom: 0;
+       display: block;
+       width: 400px;
+       z-index: 10000;
+       transform: translateX(200%);
+       background-color: #fff;
+       overflow: auto;
+       border: 1px solid rgba(0, 0, 0, 0.1);
+       transition: all 0.3s ease;
+   }
+   #item_icon_open_menu{
+    position: fixed;
+    top: 50%;
+    right: 0;
+    display: block;
+    padding: 10px 15px;
+    background-color: #f08b18;
+    color: #fff;
+    opacity: 1;
+    transition: all 0.5s ease;
+   }
+
+   #item_icon_close_menu{
+    position: fixed;
+    top: 50%;
+    z-index: 1;
+    right: 37%;
+    display: block;
+    padding: 10px 15px;
+    background-color: #f08b18;
+    color: #fff;
+    opacity: 0;
+    transition: identifier 0.35s ease;
+   }
+   @keyframes identifier {
+       from{
+        transform: translateX(950%);
+        opacity: 0;
+       }
+       to{
+        transform: translateX(0%);
+        opacity: 1;
+       }
+   }
+}

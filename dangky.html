@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="css/project.css">
+    <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.min.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/dangky.css">
+</head>
+
+<body>
+    <!-- Phần liên hệ  -->
+    <div class="lienhe">
+        <i style="position: fixed;z-index: 1;bottom:15%;right: 1%;color: rgb(0, 153, 255);font-size: 60px;"
+            class="fa-brands fa-facebook-messenger"></i>
+        <a href="cell:0358786955"><i id="phone" class="fa-solid fa-phone"></i><span></span>
+        </a>
+
+    </div>
+    <!-- Phần đầu của trang web -->
+    <div id="title">
+        <div class="width-title">
+            <div class="noidung">
+                <i class="fa-solid fa-mobile-screen-button"></i> Hotline: <a href="#"><span
+                        style="text-decoration: underline;font-weight: bolder;">097 988 55 54</span></a>
+            </div>
+            <div class="noidung2">
+                <i class="fa-solid fa-location-dot"></i> <b>Địa chỉ: </b>69/1 Cao Thắng Quận 3 Phường 3 TP.HCM
+            </div>
+            <div class="noidung3">
+                <i class="fa-solid fa-user"></i> <a href="dangnhap.html"><b>Đăng Nhập</b></a> hoặc <a href="dangky.html"><b>Đăng
+                        Ký</b></a>
+            </div>
+        </div>
+    </div>
+    <div class="baner" style="position: relative;">
+        <label class="menu-bar" for="overlay">
+            <img src="img/menu-bar.webp" style="height: 30px;width: 30px;cursor: pointer;" alt="menu-bar">
+        </label>
+        <input class="nhap" type="checkbox" id="overlay" name="">
+        <label for="overlay" class="overlay-scroll">
+        </label>
+        <label class="overlay-menubar">
+            <div class="login-menubar">
+                <i class="fa-solid fa-user"></i><a href="dangnhap.html"> Đăng nhập </a> hoặc <a href="dangky.html">Đăng ký</a>
+            </div>
+            <label class="exit" for="overlay"><i class="fa-solid fa-xmark"></i></label>
+            <div class="seach-menubar">
+                <form>
+                    <input
+                        style="position: relative;border: none;background-color: #f1f1f1;padding: 10px 20px;font-size: larger;width: 90%;list-style: none;"
+                        type="text" placeholder="Tìm sản phẩm"> <a href="#" style="color: black;"><i
+                            style="position: absolute;top:11.5%;right:14%;"
+                            class="fa-solid fa-magnifying-glass"></i></a>
+                </form>
+            </div>
+            <hr style="margin-top: 25px;opacity: 0.3;">
+            <div class="menubar">
+                <div class="title-menubar">
+                    MENU
+                </div>
+                <div class="content-menubar">
+                    <ul>
+                        <a href="">Trang chủ</a>
+                    </ul>
+                    <hr>
+                    <div class="content-menubar-product">
+                        <a style="color: #f08b18;" href="">Đồ Việt Nam</a> <label for="checkbox"><i
+                                style="float: right; padding-right: 35px; font-size: smaller;opacity: 0.7;"
+                                class="fa-solid fa-angle-right"></i></label>
+                        <hr>
+                        <input type="checkbox" name="" id="checkbox">
+                        <ul class="hover-product">
+                            <li>
+                                <a href="">Tóp mỡ, da heo</a>
+                            </li>
+                            <li>
+                                <a href="">Bánh tráng</a>
+                            </li>
+                            <li>
+                                <a href="">Các loại khô</a>
+                            </li>
+                            <li>
+                                <a href="">Cơm cháy</a>
+                            </li>
+                            <li>
+                                <a href="">Bánh truyền thống</a>
+                            </li>
+                            <li>
+                                <a href="">Đồ chiên, rang</a>
+                            </li>
+                            <li>
+                                <a href="">Gia vị</a>
+                            </li>
+                            <li>
+                                <a href="">Khoai tây, khoai lang, khoai môn</a>
+                            </li>
+                            <li>
+                                <a href="">Các loại mắm, nem, chả lụa, chân gà</a>
+                            </li>
+                            <li>
+                                <a href="">Xí muội, Ô mai</a>
+                            </li>
+                            <li>
+                                <a href="">Lạp xưởng</a>
+                            </li>
+                            <li>
+                                <a href="">Bánh tươi</a>
+                            </li>
+                            <li>
+                                <a href="">Rau câu</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="content-menubar-product">
+                        <a href="">Đồ nhập</a> <label for="checkbox2"><i
+                                style="float: right; padding-right: 35px; font-size: smaller;opacity: 0.7;"
+                                class="fa-solid fa-angle-right"></i></label>
+                        <hr>
+                        <input type="checkbox" name="" id="checkbox2">
+                        <ul class="hover-product-donhap">
+                            <li>
+                                <a href="">Bắp nhập khẩu</a>
+                            </li>
+                            <li>
+                                <a href="">Bánh nhập khẩu</a>
+                            </li>
+                            <li>
+                                <a href="">Kẹo nhập khẩu</a>
+                            </li>
+                            <li>
+                                <a href="">Pudding, thạch</a>
+                            </li>
+                            <li>
+                                <a href="">Mật ong nhập khẩu</a>
+                            </li>
+                            <li>
+                                <a href="">Ngũ cốc nhập khẩu</a>
+                            </li>
+                            <li>
+                                <a href="">Đồ hộp ăn liền</a>
+                            </li>
+                            <li>
+                                <a href="">Bánh kẹo trẻ em</a>
+                            </li>
+                            <li>
+                                <a href="">Phô mai, xúc xích, bơ</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="content-menubar-product">
+                        <a href="">Thức uống</a> <label for="checkbox3"><i
+                                style="float: right; padding-right: 35px; font-size: smaller;opacity: 0.7;"
+                                class="fa-solid fa-angle-right"></i></label>
+                        <hr>
+                        <input type="checkbox" name="" id="checkbox3">
+                        <ul class="hover-product-thucuong">
+                            <li>
+                                <a href="">Trà sữa </a>
+                            </li>
+                            <li>
+                                <a href="">Chân châu</a>
+                            </li>
+                            <li>
+                                <a href="">Trà sữa tự pha</a>
+                            </li>
+                            <li>
+                                <a href="">Me, tắc, chanh dây</a>
+                            </li>
+                            <li>
+                                <a href="">Bột pha, túi lọc, túi hòa tan</a>
+                            </li>
+                            <li>
+                                <a href="">Trà</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul>
+                        <a href="">Bánh tươi</a>
+                    </ul>
+                    <hr>
+                    <div class="content-menubar-product">
+                        <a href="">Đồ khô</a> <label for="checkbox4"><i
+                                style="float: right; padding-right: 35px; font-size: smaller;opacity: 0.7;"
+                                class="fa-solid fa-angle-right"></i></label>
+                        <hr>
+                        <input type="checkbox" name="" id="checkbox4">
+                        <ul class="hover-product-dokho">
+                            <li>
+                                <a href="">Miến</a>
+                            </li>
+                            <li>
+                                <a href="">Lẩu</a>
+                            </li>
+                            <li>
+                                <a href="">Mì</a>
+                            </li>
+                            <li>
+                                <a href="">Nui</a>
+                            </li>
+                            <li>
+                                <a href="">Các loại hạt</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="content-menubar-product">
+                        <a href="">Trái cây</a> <label for="checkbox5"><i
+                                style="float: right; padding-right: 35px; font-size: smaller;opacity: 0.7;"
+                                class="fa-solid fa-angle-right"></i></label>
+                        <hr>
+                        <input type="checkbox" name="" id="checkbox5">
+                        <ul class="hover-product-traicay">
+                            <li>
+                                <a href="#">Trái Cây Tươi</a>
+                            </li>
+                            <li>
+                                <a href="#">Trái Cây Sấy</a>
+                            </li>
+                            <li>
+                                <a href="#">Mứt Trái Cây</a>
+                            </li>
+                            <li>
+                                <a href="#">Trái Cây Ngâm</a>
+                            </li>
+                            <li>
+                                <a href="#">Xí Muội Omai</a>
+                            </li>
+                            <li>
+                                <a href="#">Các Loại Hạt</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <ul>
+                        <a href="#">Các loại mì, lẩu, miến, mì tự sôi</a>
+                    </ul>
+                    <hr>
+                    <ul>
+                        <a href="#">Sản phẩm mới</a>
+                    </ul>
+                    <script>
+                        let dl = document.getElementsByClassName('hover-product')
+                        function menubar() {
+                            if (dl.style.display === "none") {
+                                x.style.display = "block";
+                            }
+                            else
+                                x.style.display = "none";
+                        }
+                    </script>
+                </div>
+            </div>
+        </label>
+        <div class="logo">
+            <a href="#"><img src="img/logo.webp" alt="logo"></a>
+        </div>
+
+        <div class="link-fb">
+            <div class="lkfacebook">
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            </div>
+        </div>
+        <div class="link-insta">
+            <div class="lkinstagram">
+                <a href=""> <i class="fa-brands fa-instagram-square"></i></a>
+            </div>
+        </div>
+        <div class="link-clock">
+            <div class="clock" style="display: flex;">
+                <img src="img/clock.webp" alt="#" style="margin-top: 70px;">
+                <span style="transform: translateY(-4%);padding-left: 10px;">9:30 AM To 10:10 PM</span>
+            </div>
+        </div>
+        <div class="check"> <a href="#"><i class="fa-solid fa-bag-shopping"></i> Giỏ hàng (<span
+                    id="quantity_product">0</span>)</a>
+        </div>
+        <div class="cart"
+            style="font-size: 20px;right: 0px;padding: 10px;border-radius: 0.80em;color: #fff;height: 20%; margin-top: 20px;position: absolute;padding-right: 30px;">
+            <a href="#" style="position: relative;"><i style="color: rgba(48, 44, 44, 0.726);font-size: 27px;"
+                    class="fa-solid fa-bag-shopping"></i></a>
+            <div class="number-cart"
+                style="position: absolute;top:0px;left: 30px;border-radius: 50%;text-align: center;line-height: 100%;background-color: #cc1919;width: 20px;height: 20px;font-size: 12px;line-height: 170%;">
+                0
+            </div>
+        </div>
+    </div>
+    <div class="menu">
+        <div class="nd-menu">
+            <div class="f-menu">
+                <ul>
+                    <li>
+                        <a href="trangchu.html">Trang chủ <i class="fa-solid fa-angle-right"></i></a>
+                    </li>
+                    <li>
+                        <a href="#">Đồ Việt Nam <i class="fa-solid fa-angle-right"></i></a>
+                        <ul class="dovietnam">
+                            <li>
+                                <a href="#">Tóp Mỡ, Da Heo <i class="fa-solid fa-angle-right"
+                                        style="position: absolute;right: -20%;top:40%; font-size: 10px;opacity: 0.7;"></i></a>
+                                <ul class="daheo">
+                                    <li>
+                                        <a href="#">Da Heo</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Bánh Tráng</a>
+                            </li>
+                            <li>
+                                <a href="#" style="position:relative; ">Các Loại khô <i class="fa-solid fa-angle-right"
+                                        style="font-size: 10px;opacity: 0.7;position: absolute;right: -44%;top:40%;"></i></a>
+                                <ul class="menu-kho">
+                                    <li>
+                                        <a href="#"> Khô Gà</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> Khô Heo</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Khô Mực</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Khô Cá</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Cơm Cháy</a>
+                            </li>
+                            <li>
+                                <a href="#">Bánh truyền thống</a>
+                            </li>
+                            <li>
+                                <a href="#" style="position: relative;">Đồ chiên, Rang <i
+                                        class="fa-solid fa-angle-right"
+                                        style="font-size: 10px;opacity: 0.7;position: absolute;right: -25%;top:40%;"></i></a>
+                                <ul class="dochien">
+                                    <li>
+                                        <a href="#"> Nui</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Bắp Rang</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Chả Giò Tôm Mini</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Gia Vị</a>
+                            </li>
+                            <li>
+                                <a href="#">Khoai Tây, Khoai Lang, Khoai Môn</a>
+                            </li>
+                            <li>
+                                <a href="#">Các Loại Mắm/ Nem/ Chả Lụa/ chân Gà</a>
+                            </li>
+                            <li>
+                                <a href="#"> Xí Muội Omai</a>
+                            </li>
+                            <li>
+                                <a href="#">Lạp Xưởng</a>
+                            </li>
+                            <li>
+                                <a href="#">Bánh Tươi</a>
+                            </li>
+                            <li>
+                                <a href="#">Rau Câu</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" style="position: relative;">Đồ Nhập <i class="fa-solid fa-angle-right"></i></a>
+                        <ul class="donhap">
+                            <li>
+                                <a href="#">Bắp Nhập Khẩu </a>
+                            </li>
+                            <li>
+                                <a href="#">Bánh Nhập Khẩu <i class="fa-solid fa-angle-right"
+                                        style="font-size: 10px;opacity: 0.7; position: absolute;right: 5%;top:40%;"></i></a>
+                                <ul class="cake">
+                                    <li>
+                                        <a href="#">Mochi</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Bánh Quy</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Bánh Bông Lan</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Bánh Chocopie</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Bánh Socola</a>
+                                    </li>
+                                </ul>
+
+                            </li>
+                            <li>
+                                <a href="#" style="position: relative;">Kẹo Nhập Khẩu<i class="fa-solid fa-angle-right"
+                                        style="font-size: 10px;opacity: 0.7; position: absolute;right: -35%;top:40%;"></i></a>
+                                <ul class="candy">
+                                    <li>
+                                        <a href="#">Kẹo Dẻo</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Kẹo Socola</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Kẹo</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Kẹo Xí Muội</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" style="position: relative;">Pudding, Thạch<i class="fa-solid fa-angle-right"
+                                        style="font-size: 10px;opacity: 0.7; position: absolute;right: -36%;top:40%;"></i></a>
+                                <ul class="pudding">
+                                    <li>
+                                        <a href="#">Pudding</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Bòn Bon</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Thạch</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">Mật Ong Nhập Khẩu</a>
+                            </li>
+                            <li>
+                                <a href="#">Ngũ Cốc Nhập Khẩu</a>
+                            </li>
+                            <li>
+                                <a href="#">Đồ Hộp Ăn Liền</a>
+                            </li>
+                            <li>
+                                <a href="#">Hạt Nêm, Dầu Ăn</a>
+                            </li>
+                            <li>
+                                <a href="#">Phô Mai/ Xúc Xích/ Bơ</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Thức Uống <i class="fa-solid fa-angle-right"></i></a>
+                        <ul class="douong">
+                            <li>
+                                <a href="#">Trà Sữa</a>
+                            </li>
+                            <li>
+                                <a href="#">Trân Châu</a>
+                            </li>
+                            <li>
+                                <a href="#">Trà Sữa tự pha</a>
+                            </li>
+                            <li>
+                                <a href="#">Me, Tắc, chanh Dây </a>
+                            </li>
+                            <li>
+                                <a href="#">Bột Pha, Túi Lọc, Túi Hòa Tan</a>
+                            </li>
+                            <li>
+                                <a href="#">Trà</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Bánh Tươi</a>
+                    </li>
+                    <li>
+                        <a href="#">Đồ Khô <i class="fa-solid fa-angle-right"></i></a>
+                        <ul class="dokho">
+                            <li>
+                                <a href="#">Miến</a>
+                            </li>
+                            <li>
+                                <a href="#">Lẩu</a>
+                            </li>
+                            <li>
+                                <a href="#">Mì</a>
+                            </li>
+                            <li>
+                                <a href="#">Nui</a>
+                            </li>
+                            <li>
+                                <a href="#">Các Loại Hạt</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Trái Cây <i class="fa-solid fa-angle-right"></i></a>
+                        <ul class="traicay">
+                            <li>
+                                <a href="#">Trái Cây Tươi</a>
+                            </li>
+                            <li>
+                                <a href="#">Trái Cây Sấy</a>
+                            </li>
+                            <li>
+                                <a href="#">Mứt Trái Cây</a>
+                            </li>
+                            <li>
+                                <a href="#">Trái Cây Ngâm</a>
+                            </li>
+                            <li>
+                                <a href="#">Xí Muội Omai</a>
+                            </li>
+                            <li>
+                                <a href="#">Các Loại Hạt</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Các loại Mì, Lẩu, Miến, Mì tự sôi</a>
+                    </li>
+                    <li>
+                        <a href="#">Sản phẩm Mới</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="seach">
+                <form>
+                    <input type="text" src="Nhập để tìm kiếm " placeholder="Tìm sản phẩm"><i
+                        class="fa-solid fa-magnifying-glass"></i>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--Phần thông tin đăng nhập  -->
+    <section>
+        <div class="item_register">
+            <div class="widt_register">
+                <div class="link_homepage">
+                    <a href="trangchu.html">Trang chủ</a><i class="fa-solid fa-angle-right"></i></i> <span>Tài
+                        khoản</span>
+                    <div>
+                        Tạo Tài Khoản
+                    </div>
+                    <p>
+                        Nếu bạn chưa có tài khoản, đăng ký tại đây.
+                    </p>
+                </div>
+                <div class="title_register">
+                    <div class="form_register">
+                        <label for="ho">Họ:</label><br>
+                        <input id="ho" type="text" placeholder="Họ" class="form_input">
+                        <div class="error_messeger">
+                        </div>
+                    </div>
+                    <div class="form_register">
+                        <label for="name">Tên:</label><br>
+                        <input id="name" type="text" placeholder="Tên" class="form_input">
+                        <div class="error_messeger">
+                        </div>
+                    </div>
+                    <div class="form_register">
+                        <label for="email">Email:</label><br>
+                        <input id="email" type="email" placeholder="Email" class="form_input">
+                        <div class="error_messeger">
+                        </div>
+                    </div>
+                    <div class="form_register">
+                        <label for="password">Mật khẩu:</label><br>
+                        <input id="password" type="text" placeholder="Mật khẩu" class="form_input">
+                        <div class="error_messeger">
+                        </div>
+                    </div>
+                </div>
+                <button onclick="dangky()">
+                    Đăng ký
+                </button>
+                <span>
+                    <a style="color: black;" href="dangnhap.html">Đăng nhập</a>
+                </span>
+            </div>
+        </div>
+    </section>
+    <!-- Phần cuối của trang web -->
+    <div class="nd-last">
+        <div class="width-last">
+            <div class="nd-last-1">
+                <h3>
+                    HOTLINE 0979885XXX
+                </h3>
+                <div>
+                    <i style="color: #cc1919;margin-right: 5px;" class="fa-solid fa-location-dot"></i> <span>69/1 Cao
+                        Thắng
+                        Quận 3 Phường 3 TP.HCM</span>
+                </div>
+                <div>
+                    <i style="color: #cc1919;margin-right: 8px;" class="fa-solid fa-phone"></i>097 988 55 54<br>
+                    Thứ 2 - Chủ nhật: 9:30 - 22:00
+                </div>
+                <div>
+                    <i style="color: #cc1919;margin-right: 8px;" class="fa-solid fa-envelope"></i>anvatchumanh@gmail.com
+                </div>
+            </div>
+            <div class="nd-last-2">
+                <h3>
+                    MENU
+                </h3>
+                <ul>
+                    <li>
+                        Trang Chủ
+                    </li>
+                    <li>
+                        Đồ Việt Nam
+                    </li>
+                    <li>
+                        Đồ Nhập
+                    </li>
+                    <li>
+                        Thức Uống
+                    </li>
+                    <li>
+                        Bánh Tươi
+                    </li>
+                    <li>
+                        Đồ Khô
+                    </li>
+                    <li>
+                        Trái Cây
+                    </li>
+                    <li>
+                        Các Loại Mì, Lẩu, Miến, Mì Tự Sôi
+                    </li>
+                    <li>
+                        Sản Phẩm Mới
+                    </li>
+                </ul>
+            </div>
+            <div class="nd-last-3">
+                <h3>
+                    SUPPORT
+                </h3>
+                <ul>
+                    <li>
+                        Tìm Kiếm
+                    </li>
+                    <li>
+                        Chính sách bảo mật
+                    </li>
+                    <li>
+                        Điều khoản dịch vụ
+                    </li>
+                    <li>
+                        Chính sách vận chuyển
+                    </li>
+                </ul>
+            </div>
+            <div class="nd-last-4">
+                <h3>
+                    CONTACT
+                </h3>
+                <nav>
+                    <img src="img/imglast.jpg" alt="">
+                    <div class="picture-last">
+                        <a href=""><img src="img/logolast.jpg" alt=""></a>
+                    </div>
+                    <div class="nd-imglast"
+                        style="position: absolute;top: 10px;left: 70px;display: inline-block;z-index: 0;">
+                        <a href="">Ăn Vặt Chú Mạnh</a>
+                    </div>
+                    <span class="like-page">
+                        <a href=""><i class="fa-brands fa-facebook"></i> Thích Trang</a>
+                    </span>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="phancuoi">
+        <div class="width">
+            <div>
+                Sở Hữu Thương Mại: CÔNG TY TNHH GOLDEN BRIDGE TRADING
+            </div>
+            <div>
+                MST:0316292493 | Powered by Haravan
+            </div>
+        </div>
+    </div>
+    <script>
+        showcart();
+        showquantilycart();
+    </script>
+    <script src="javascript/login.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="/css/quantri.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section>
+        <div class="header_home">
+            <i onclick="showmenu()" id="icon-menu" class="fa-solid fa-bars"></i>
+            <div class="header_home_left">
+            </div>
+            <div class="header_home_right">
+                <ul class="welcome">
+                    <li style="padding: 10px 0px 0px 10px;">
+                        Xin chào, <span>ông chủ</span><i class="fa-solid fa-caret-down"></i>
+                        <ul class="taikhoan">
+                            <li>
+                                <a href="">Tài khoản</a>
+                            </li>
+                            <li>
+                                <a href="">Đăng xuất</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="item-menu-bar">
+            <i onclick="hidemenu()" class="fa-solid fa-xmark"></i>
+            <div style="margin-top: 40px;">
+                <i class="fa-solid fa-globe"></i><a href="">Tổng quan</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-box-tissue"></i><a href="loaisp.html">Loại sản phẩm</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-truck"></i><a href="nhacungcap.html">Nhà cung cấp</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-users"></i><a href="khachhang.html">Khách hàng</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-user"></i><a href="nhanvien.html">Nhân viên</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-cart-arrow-down"></i> <a href="hoadonnhap.html">Hóa đơn nhập</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-cart-shopping"></i><a href="hoadonban.html">Hóa đơn bán</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-gear"></i><a href="">Thiết lập</a>
+            </div>
+
+        </div>
+    </section>
+    <section>
+        <div class="gird item_body_mes">
+            <div class="row">
+                <div class="col l-1 m-0 c-0">
+                    <div class="title-left">
+                        <i class="fa-solid fa-globe"></i><a href="trangquantri.html">Tổng quan</a>
+                    </div>
+                    <div class="title-left">
+                        <i class="fa-solid fa-box-tissue"></i><a href="loaisp.html">Loại sản phẩm</a>
+                    </div>
+                    <div class="title-left">
+                        <i class="fa-brands fa-product-hunt"></i><a href="sanpham.html"> Sản phẩm</a>
+                    </div>
+                    <div style="background-color: rgba(0, 0, 0, 0.5);" class="title-left">
+                        <i class="fa-solid fa-truck"></i><a href="nhacungcap.html">Nhà cung cấp</a>
+                    </div>
+                    <div class="title-left">
+                        <i class="fa-solid fa-users"></i><a href="khachhang.html">Khách hàng</a>
+                    </div>
+                    <div class="title-left">
+                        <i class="fa-solid fa-user"></i><a href="nhanvien.html">Nhân viên</a>
+                    </div>
+                    <div class="title-left">
+                        <i class="fa-solid fa-cart-arrow-down"></i> <a href="hoadonnhap.html">Hóa đơn nhập</a>
+                    </div>
+                    <div class="title-left">
+                        <i class="fa-solid fa-cart-shopping"></i><a href="hoadonban.html">Hóa đơn bán</a>
+                    </div>
+                    <div class="title-left">
+                        <i class="fa-solid fa-gear"></i><a href="">Thiết lập</a>
+                    </div>
+                </div>
+                <div class="col l-11 m-12 c-12">
+                    <div class="col l-12 m-12 c-12">
+                        <div class="row">
+                            <div class="col l-4 m-12 c-12">
+                                <div class="item_title">
+                                    <i class="fa-solid fa-truck"></i> <span>Nhập thông tin nhà cung cấp</span>
+                                    <hr>
+                                </div>
+                                <div class="input_product">
+                                    <form action="">
+                                        <label for="codesupplier">
+                                            Mã nhà cung cấp:
+                                        </label>
+                                        <input type="text" id="codesupplier" placeholder="Nhập mã nhà cung cấp">
+                                        <label for="namesupplier">Tên nhà cung cấp: </label>
+                                        <input type="text" name="" id="namesupplier"
+                                            placeholder="Nhập tên nhà cung cấp">
+                                        <label for="phonesupplier">Số điện thoại: </label>
+                                        <input type="text" name="" id="phonesupplier" placeholder="Nhập số điện thoại">
+                                        <label for="emailsupplier">Email: </label>
+                                        <input type="email" name="" id="emailsupplier"
+                                            placeholder="Nhập email nhà cung cấp">
+                                        <label for="addresssupplier">Địa chỉ:</label>
+                                        <input type="text" name="" id="addresssupplier"
+                                            placeholder="Nhập địa chỉ nhà cung cấp">
+                                        <hr>
+                                        <button onclick="them()" class="btnadd">Thêm nhà cung cấp</button>
+                                        <button onclick="nhapmoi()" class="btninput">Nhập mới</button>
+                                        <button onclick="updatenew()" class="btnupdate">Cập nhật thông tin</button>
+                                    </form>
+
+                                </div>
+                            </div>
+                            <div class="col l-8 m-12 c-12">
+                                <div class="item_title">
+                                    <i class="fa-solid fa-book-open"></i> <span>Danh sách nhà cung cấp</span>
+                                    <hr>
+                                </div>
+                                <div class="item-seach">
+                                    <input style="width:80%" type="text" placeholder="Nhập mã tên, nhà cung cấp...">
+                                    <button> <i class="fa-solid fa-magnifying-glass"></i> Tìm kiếm</button>
+                                </div>
+                                <div class="table-product">
+                                    <table>
+                                        <thead>
+                                            <tr>
+                                                <th>STT</th>
+                                                <th>Mã nhà cung cấp</th>
+                                                <th>Tên nhà cung cấp</th>
+                                                <th>Sood điện thoại</th>
+                                                <th>Email</th>
+                                                <th>Địa chỉ</th>
+                                                <th> Thao tác</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="item-Supplier">
+
+                                        </tbody>
+                                    </table>
+                                    <div class="delete-all">
+                                        <button onclick="xoaall()"><i class="fa-solid fa-trash-can"></i> Xóa tất
+                                            cả</button>
+                                    </div>
+                                    <div class="amount-product">
+                                        Số lượng loại sản phẩm: <span id="amount-product"></span>
+                                        <div class="page-product">
+                                            <button><i class="fa-solid fa-angle-left"></i></button>
+                                            <button>1</button>
+                                            <button>2</button>
+                                            <button>3</button>
+                                            <button><i class="fa-solid fa-angle-right"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var list = JSON.parse(localStorage.getItem('Supplier')) || [];
+            function them() {
+                var mancc = document.getElementById('codesupplier').value;
+                var tenncc = document.getElementById('namesupplier').value;
+                var sdtncc = document.getElementById('phonesupplier').value;
+                var emailncc = document.getElementById('emailsupplier').value;
+                var diachincc = document.getElementById('addresssupplier').value;
+
+                var number = /^[0-9]+$/;
+                if (mancc == null || mancc == "") {
+                    var d = new Date();
+                    mancc = Number(d);
+                }
+                else if (!mancc.match(number) || mancc.length != 13) {
+                    alert("Mã nhà cung cấp phải là kiểu số và có độ dài là 13 ký tự! Vui lòng nhập lại!");
+                    return false;
+                }
+
+                if (tenncc == null || tenncc == "") {
+                    alert("Tên nhà cung cấp không được để trống! Vui lòng nhập lại!");
+                    return false;
+                }
+                else if (sdtncc == null || sdtncc == "") {
+                    alert("Số điện thoại nhà cung cấp không được để trống! Vui lòng nhập lại!");
+                    return false;
+                } else if (!sdtncc.match(number) || sdtncc.length != 10) {
+                    alert("Số điện thoại nhà cung cấp phải là kiểu số và có độ dài là 10 ký tự! Vui lòng nhập lại!");
+                    return false;
+                }
+                else if (emailncc == null || emailncc == "") {
+                    alert("Email nhà cung cấp không được để trống! Vui lòng nhập lại!");
+                    return false;
+                }
+                else if (diachincc == null || diachincc == "") {
+                    alert("Địa chỉ nhà cung cấp không được để trống! Vui lòng nhập lại!");
+                    return false;
+                }
+                else {
+                    for (var x of list) {
+                        if (x.mancc == mancc) {
+                            alert("Mã nhà cung cấp đã tồn tại! Vui lòng nhập lại!")
+                            return false;
+                        }
+                    }
+                }
+
+                var supplier = {
+                    "mancc": mancc,
+                    "tenncc": tenncc,
+                    "sdtncc": sdtncc,
+                    "emailncc": emailncc,
+                    "diachincc": diachincc
+                };
+                list.push(supplier);
+                localStorage.setItem('Supplier', JSON.stringify(list));
+                alert('Thêm thành công')
+            }
+
+            function loaddataproduct() {
+                var x = '';
+                for (let i = 0; i < list.length; i++) {
+                    x += `
+                    <tr>
+                        <td style="text-align: center;">`+ i + `</td>
+                        <td>`+ list[i].mancc + `</td>
+                        <td>`+ list[i].tenncc + `</td>
+                        <td>`+ list[i].sdtncc + `</td>
+                        <td>`+ list[i].emailncc + `</td>
+                        <td>`+ list[i].diachincc + `</td>
+                        <td class="item-icon">
+                        <i onclick="suancc(`+ list[i].mancc + `)" style="padding-right: 5px;"
+                        class="fa-solid fa-pen-to-square"></i><i onclick="xoancc(`+ list[i].mancc + `)"
+                        style="padding-left: 5px;" class="fa-solid fa-trash-can"></i>
+                        </td>
+                        </tr>
+                `
+                }
+                document.getElementById('item-Supplier').innerHTML = x;
+                document.getElementById('amount-product').innerHTML = list.length;
+            }
+            loaddataproduct()
+            function xoancc(ma) {
+                if (confirm("Bạn có chắc muốn xóa không?")) {
+                    var index = list.findIndex(x => x.mancc == ma);
+                    if (index >= 0) {
+                        list.splice(index, 1);
+                    }
+                    update(list);
+                    loaddataproduct();
+                }
+            }
+            function update(list) {
+                localStorage.setItem('Supplier', JSON.stringify(list));
+            }
+            function xoaall() {
+                if (confirm("Bạn có muốn xóa tất cả không")) {
+                    list.splice(0, list.length);
+                    update(list)
+                    alert("Xóa tất cả dữ liệu thành công")
+                }
+                loaddataproduct();
+            }
+            function suancc(ma) {
+                for (x of list) {
+                    if (x.mancc == ma) {
+                        document.getElementById('codesupplier').value = x.mancc;
+                        document.getElementById('namesupplier').value = x.tenncc;
+                        document.getElementById('phonesupplier').value = x.sdtncc;
+                        document.getElementById('emailsupplier').value = x.emailncc;
+                        document.getElementById('addresssupplier').value = x.diachincc;
+                    }
+                }
+            }
+            function nhapmoi() {
+                document.getElementById('codesupplier').value = "";
+                document.getElementById('namesupplier').value = "";
+                document.getElementById('phonesupplier').value = "";
+                document.getElementById('emailsupplier').value = "";
+                document.getElementById('addresssupplier').value = "";
+            }
+            function updatenew() {
+                var mancc = document.getElementById('codesupplier').value;
+                var tenncc = document.getElementById('namesupplier').value;
+                var sdtncc = document.getElementById('phonesupplier').value;
+                var emailncc = document.getElementById('emailsupplier').value;
+                var diachincc = document.getElementById('addresssupplier').value;
+                var check = false;
+                var number = /^[0-9]+$/;
+                if (tenncc == null || tenncc == "") {
+                    alert("Tên nhà cung cấp không được để trống! Vui lòng nhập lại!");
+                    return false;
+                }
+                else if (sdtncc == null || sdtncc == "") {
+                    alert("Số điện thoại nhà cung cấp không được để trống! Vui lòng nhập lại!");
+                    return false;
+                } else if (!sdtncc.match(number) || sdtncc.length != 10) {
+                    alert("Số điện thoại nhà cung cấp phải là kiểu số và có độ dài là 10 ký tự! Vui lòng nhập lại!");
+                    return false;
+                }
+                else if (diachincc == null || diachincc == "") {
+                    alert("Địa chỉ nhà cung cấp không được để trống! Vui lòng nhập lại!");
+                    return false;
+                }
+                for (x of list) {
+                    if (x.mancc == mancc) {
+                        x.tenncc = tenncc;
+                        x.sdtncc = sdtncc;
+                        x.emailncc = emailncc;
+                        x.diachincc = diachincc;
+                        check = true;
+                        break;
+                    }
+                }
+
+                if (check == true) {
+                    alert("Cập nhập thông tin thành công!");
+                    update(list);
+                    loaddataproduct();
+                }
+                else {
+                    alert("Cập nhật không thành công");
+                }
+
+            }
+        </script>
+        <script src="/javascript/show.js"></script>
+    </section>
+    </seaction>
+</body>
+
+</html>

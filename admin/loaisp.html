@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/fontawesome-free-6.1.1-web/css/all.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="/css/quantri.css">
+</head>
+
+<body>
+    <section>
+        <div class="header_home">
+            <i onclick="showmenu()" id="icon-menu" class="fa-solid fa-bars"></i>
+            <div class="header_home_left">
+            </div>
+            <div class="header_home_right">
+                <ul class="welcome">
+                    <li style="padding: 10px 0px 0px 10px;">
+                        Xin chào, <span>ông chủ</span><i class="fa-solid fa-caret-down"></i>
+                        <ul class="taikhoan">
+                            <li>
+                                <a href="">Tài khoản</a>
+                            </li>
+                            <li>
+                                <a href="">Đăng xuất</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="item-menu-bar">
+            <i onclick="hidemenu()" class="fa-solid fa-xmark"></i>
+            <div style="margin-top: 40px;">
+                <i class="fa-solid fa-globe"></i><a href="">Tổng quan</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-box-tissue"></i><a href="loaisp.html">Loại sản phẩm</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-truck"></i><a href="nhacungcap.html">Nhà cung cấp</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-users"></i><a href="khachhang.html">Khách hàng</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-user"></i><a href="nhanvien.html">Nhân viên</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-cart-arrow-down"></i> <a href="hoadonnhap.html">Hóa đơn nhập</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-cart-shopping"></i><a href="hoadonban.html">Hóa đơn bán</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-gear"></i><a href="">Thiết lập</a>
+            </div>
+
+        </div>
+    </section>
+    <div class="gird item_body_mes">
+        <div class="row">
+            <div class="col l-1 m-0 c-0">
+                <div class="title-left">
+                    <i class="fa-solid fa-globe"></i><a href="trangquantri.html">Tổng quan</a>
+                </div>
+                <div style="background-color: rgba(0, 0, 0, 0.5);" class="title-left">
+                    <i class="fa-solid fa-box-tissue"></i><a href="loaisp.html">Loại sản phẩm</a>
+                </div>
+                <div class="title-left">
+                    <i class="fa-brands fa-product-hunt"></i><a href="sanpham.html"> Sản phẩm</a>
+                </div>
+                <div class="title-left">
+                    <i class="fa-solid fa-truck"></i><a href="nhacungcap.html">Nhà cung cấp</a>
+                </div>
+                <div class="title-left">
+                    <i class="fa-solid fa-users"></i><a href="khachhang.html">Khách hàng</a>
+                </div>
+                <div class="title-left">
+                    <i class="fa-solid fa-user"></i><a href="nhanvien.html">Nhân viên</a>
+                </div>
+                <div class="title-left">
+                    <i class="fa-solid fa-cart-arrow-down"></i> <a href="hoadonnhap.html">Hóa đơn nhập</a>
+                </div>
+                <div class="title-left">
+                    <i class="fa-solid fa-cart-shopping"></i><a href="hoadonban.html">Hóa đơn bán</a>
+                </div>
+                <div class="title-left">
+                    <i class="fa-solid fa-gear"></i><a href="">Thiết lập</a>
+                </div>
+            </div>
+            <div class="col l-11 m-12 c-12">
+                <div class="col l-12 m-12 c-12">
+                    <div class="row">
+                        <div class="col l-5 m-12 c-12">
+                            <div class="item_title">
+                                <i class="fa-solid fa-tag"></i> <span>Nhập thông tin loại sản phẩm</span>
+                                <hr>
+                            </div>
+                            <div class="input_product">
+                                <form action="">
+                                    <label for="">
+                                        Mã loại sản phẩm:
+                                    </label>
+                                    <input type="text" id="codetypeproduct" placeholder="Nhập mã loại sản phẩm">
+                                    <label for="nametypeproduct">Tên loại sản phẩm: </label>
+                                    <input type="text" name="" id="nametypeproduct"
+                                        placeholder="Nhập tên loại sản phẩm">
+                                    <hr>
+                                    <button onclick="addTypeProduct()" class="btnadd">Thêm loại sản phẩm</button>
+                                    <button onclick="nhapmoi()" class="btninput">Nhập mới</button>
+                                    <button onclick="updatepr()" class="btnupdate">Cập nhật thông tin</button>
+                                </form>
+
+                            </div>
+                        </div>
+                        <div class="col l-7 m-12 c-12">
+                            <div class="item_title">
+                                <i class="fa-solid fa-book-open"></i> <span>Danh sách loại sản phẩm</span>
+                                <hr>
+                            </div>
+                            <div class="item-seach">
+                                <input style="width:80%;" type="text" placeholder="Nhập thông tin cần tìm kiếm">
+                                <button> <i class="fa-solid fa-magnifying-glass"></i> Tìm kiếm</button>
+                            </div>
+                            <div class="table-product">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>STT</th>
+                                            <th class="firts-table">Mã loại</th>
+                                            <th class="middle-table">Tên loại</th>
+                                            <th class="last-table"> Các thao tác</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="loaddataup">
+
+                                    </tbody>
+                                </table>
+                                <div class="delete-all">
+                                    <button onclick="xoaall()"><i class="fa-solid fa-trash-can"></i> Xóa tất cả</button>
+                                </div>
+                                <div class="amount-product">
+                                    Số lượng loại sản phẩm: <span id="amount-product"></span>
+                                    <div class="page-product">
+                                        <button><i class="fa-solid fa-angle-left"></i></button>
+                                        <button>1</button>
+                                        <button>2</button>
+                                        <button>3</button>
+                                        <button><i class="fa-solid fa-angle-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var listhh = JSON.parse(localStorage.getItem('TypeProduct')) || [];
+        function addTypeProduct() {
+            var codetype = document.getElementById('codetypeproduct').value;
+            var nametype = document.getElementById('nametypeproduct').value;
+            var number = /^[0-9]+$/;
+            if (codetype == null || codetype == '') {
+                var date = new Date();
+                codetype = Number(date);
+            }
+            else if (!codetype.match(number) && codetype.length != 13) {
+                alert('Mã loại phải là kiểu số và có độ dài bằng 13')
+                return false;
+            }
+            if (nametype == null || nametype == '') {
+                alert('Tên loại không được để trống! Vui lòng nhập lại!')
+                return false;
+            }
+            else {
+                for (let i = 0; i < listhh.length; i++) {
+                    if (listhh[i].codetype == codetype) {
+                        alert('Mã đã tồn tại vui lòng thử lại với mã khác!')
+                        return false;
+                    }
+                }
+            }
+            var listproduct = {
+                'codetype': codetype,
+                'nametype': nametype
+            };
+            listhh.push(listproduct);
+            localStorage.setItem('TypeProduct', JSON.stringify(listhh));
+            alert('Thêm vào giỏ hàng thành công')
+            console.log(listhh)
+        }
+
+        function loaddataproduct() {
+            var x = '';
+            for (let i = 0; i < listhh.length; i++) {
+                x += `
+                <tr>
+                    <td>`+ i + `</td>
+                    <td>`+ listhh[i].codetype + `</td>
+                    <td>`+ listhh[i].nametype + `</td>
+                    <td class="item-icon">
+                    <i onclick="sua(`+ listhh[i].codetype + `)" style="padding-right: 5px;" class="fa-solid fa-pen-to-square"></i><i onclick="xoa(` + listhh[i].codetype + `)" style="padding-left: 5px;" class="fa-solid fa-trash-can"></i>
+                    </td>
+                </tr>
+                `
+            }
+            document.getElementById('loaddataup').innerHTML = x;
+            document.getElementById('amount-product').innerHTML = listhh.length;
+        }
+        loaddataproduct()
+        function xoa(ma) {
+            if (confirm("Bạn có chắc muốn xóa không?")) {
+                var index = listhh.findIndex(x => x.codetype == ma);
+                if (index >= 0) {
+                    listhh.splice(index, 1);
+                }
+                loaddataproduct();
+                update(listhh);
+            }
+        }
+        function update(list) {
+            localStorage.setItem('TypeProduct', JSON.stringify(list));
+        }
+        function nhapmoi() {
+            document.getElementById('codetypeproduct').value = "";
+            document.getElementById('nametypeproduct').value = "";
+        }
+        function xoaall() {
+            if (confirm("Bạn có muốn xóa tất cả không?")) {
+                listhh.splice(0, listhh.length);
+                update(listhh)
+                alert("Xóa tất cả dữ liệu thành công")
+            }
+            loaddataproduct();
+        }
+        function sua(ma) {
+            for (x of listhh) {
+                if (x.codetype == ma) {
+                    document.getElementById('codetypeproduct').value = x.codetype;
+                    document.getElementById('nametypeproduct').value = x.nametype;
+                }
+            }
+        }
+        function updatepr() {
+            var getma = document.getElementById('codetypeproduct').value;
+            var getname = document.getElementById('nametypeproduct').value;
+            var check = true;
+            for (x of listhh) {
+                if (x.codetype == getma) {
+                    x.nametype = getname;
+                    check = false;
+                    break;
+                }
+            }
+            if (getma == null || getname == "") {
+                alert("Tên loại không được bỏ trống");
+                return false;
+            }
+            if (check == false) {
+                alert("Cập nhập thông tin thành công!");
+                update(listhh);
+                loaddataproduct();
+            }
+            else {
+                alert("Cập nhật không thành công");
+            }
+
+        }
+    </script>
+    <script src="/javascript/show.js"></script>
+    </section>
+    </section>
+</body>
+
+</html>

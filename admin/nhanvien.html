@@ -1,0 +1,418 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/fontawesome-free-6.1.1-web/css/all.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="/css/quantri.css">
+</head>
+
+<body>
+    <section>
+        <div class="header_home">
+            <i onclick="showmenu()" id="icon-menu" class="fa-solid fa-bars"></i>
+            <div class="header_home_left">
+            </div>
+            <div class="header_home_right">
+                <ul class="welcome">
+                    <li style="padding: 10px 0px 0px 10px;">
+                        Xin chào, <span>ông chủ</span><i class="fa-solid fa-caret-down"></i>
+                        <ul class="taikhoan">
+                            <li>
+                                <a href="">Tài khoản</a>
+                            </li>
+                            <li>
+                                <a href="">Đăng xuất</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="item-menu-bar">
+            <i onclick="hidemenu()" class="fa-solid fa-xmark"></i>
+            <div style="margin-top: 40px;">
+                <i class="fa-solid fa-globe"></i><a href="">Tổng quan</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-box-tissue"></i><a href="loaisp.html">Loại sản phẩm</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-truck"></i><a href="nhacungcap.html">Nhà cung cấp</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-users"></i><a href="khachhang.html">Khách hàng</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-user"></i><a href="nhanvien.html">Nhân viên</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-cart-arrow-down"></i> <a href="hoadonnhap.html">Hóa đơn nhập</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-cart-shopping"></i><a href="hoadonban.html">Hóa đơn bán</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-gear"></i><a href="">Thiết lập</a>
+            </div>
+
+        </div>
+    </section>
+    <div class="gird item_body_mes">
+        <div class="row">
+            <div class="col l-1 m-0 c-0">
+                <div class="title-left">
+                    <i class="fa-solid fa-globe"></i><a href="trangquantri.html">Tổng quan</a>
+                </div>
+                <div class="title-left">
+                    <i class="fa-solid fa-box-tissue"></i><a href="loaisp.html">Loại sản phẩm</a>
+                </div>
+                <div class="title-left">
+                    <i class="fa-brands fa-product-hunt"></i><a href="sanpham.html"> Sản phẩm</a>
+                </div>
+                <div class="title-left">
+                    <i class="fa-solid fa-truck"></i><a href="nhacungcap.html">Nhà cung cấp</a>
+                </div>
+                <div class="title-left">
+                    <i class="fa-solid fa-users"></i><a href="khachhang.html">Khách hàng</a>
+                </div>
+                <div style="background-color: rgba(0, 0, 0, 0.5);" class="title-left">
+                    <i class="fa-solid fa-user"></i><a href="nhanvien.html">Nhân viên</a>
+                </div>
+                <div class="title-left">
+                    <i class="fa-solid fa-cart-arrow-down"></i> <a href="hoadonnhap.html">Hóa đơn nhập</a>
+                </div>
+                <div class="title-left">
+                    <i class="fa-solid fa-cart-shopping"></i><a href="hoadonban.html">Hóa đơn bán</a>
+                </div>
+                <div class="title-left">
+                    <i class="fa-solid fa-gear"></i><a href="">Thiết lập</a>
+                </div>
+            </div>
+            <div class="col l-11 m-12 c-12">
+                <div class="col l-12 m-12 c-12">
+                    <div class="row">
+                        <div class="col l-5 m-12 c-12">
+                            <div class="item_title">
+                                <i class="fa-solid fa-user"></i> <span>Nhập thông tin nhân viên</span>
+                                <hr>
+                            </div>
+                            <div class="input_product">
+                                <form action="">
+                                    <label for="codestaff">Nhập mã nhân viên:</label>
+                                    <input type="text" id="codestaff" placeholder="Nhập mã nhân viên">
+                                    <label for="namestaff">Nhập tên nhân viên:</label>
+                                    <input type="text" id="namestaff" placeholder="Nhập tên nhân viên">
+                                    <label for="img-product">Hình ảnh:</label>
+                                    <div id="loadfile">
+                                        <input type="file" id="img-product" onchange="loadfile(event)">
+                                        <div class="show-img">
+                                            <span>Show:</span>
+                                            <img id="showimg">
+                                        </div>
+
+                                    </div>
+                                    <label for="phonestaff">Số điện thoại: </label>
+                                    <input type="text" name="" id="phonestaff"
+                                        placeholder="Nhập số điện thoại nhân viên">
+                                    <label for="emailstaff">Email: </label>
+                                    <input type="email" name="" id="emailstaff" placeholder="Nhập email nhân viên">
+                                    <label for="slect-permission">
+                                        Quyền:
+                                    </label>
+                                    <select name="" id="slect-permission">
+                                        <option value="chonquyen">--Chọn quyền--</option>
+                                        <option value="quản lý">Quản lý</option>
+                                        <option value="nhân viên">Nhân viên</option>
+                                    </select>
+                                    <label for="status"> Trạng thái:
+                                    </label>
+                                    <select name="" id="status">
+                                        <option value="chọn trạng thái">--Chọn trạng thái--</option>
+                                        <option value="Khóa">Khóa</option>
+                                        <option value="Hoạt động">Hoạt động</option>
+                                    </select>
+                                    <label for="passstaff">Mật khẩu:</label>
+                                    <input type="text" name="" id="passstaff" placeholder="Nhập mật khẩu">
+                                    <hr>
+                                    <button onclick="them()" class="btnadd">Thêm loại sản phẩm</button>
+                                    <button onclick="lammoi()" class="btninput">Nhập mới</button>
+                                    <button onclick="updatenew()" class="btnupdate">Cập nhật thông tin</button>
+                                </form>
+
+                            </div>
+                        </div>
+                        <div class="col l-7 m-12 c-12">
+                            <div class="item_title">
+                                <i class="fa-solid fa-users"></i> <span>Danh sách sản phẩm</span>
+                                <hr>
+                            </div>
+                            <div class="item-seach">
+                                <input style="width:80%" type="text" placeholder="Nhập mã, tên nhân viên...">
+                                <button> <i class="fa-solid fa-magnifying-glass"></i> Tìm kiếm</button>
+                            </div>
+                            <div class="table-product">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>STT</th>
+                                            <th>Mã nhân viên</th>
+                                            <th>Tên nhân viên</th>
+                                            <th>Hình ảnh</th>
+                                            <th>Eamil</th>
+                                            <th>Số điện thoại</th>
+                                            <th>Quyền
+                                            </th>
+                                            <th>Trạng thái</th>
+                                            <th> Các thao tác</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="item-staff">
+
+                                    </tbody>
+                                </table>
+                                <div class="delete-all">
+                                    <button onclick="xoaall()"><i class="fa-solid fa-trash-can"></i> Xóa tất cả</button>
+                                </div>
+                                <div class="amount-product">
+                                    Số lượng loại sản phẩm: <span id="amount-product"></span>
+                                    <div class="page-product">
+                                        <button><i class="fa-solid fa-angle-left"></i></button>
+                                        <button>1</button>
+                                        <button>2</button>
+                                        <button>3</button>
+                                        <button><i class="fa-solid fa-angle-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <script>
+        var list = JSON.parse(localStorage.getItem('Staff')) || [];
+        function loadfile(event) {
+            var img = document.getElementById('showimg');
+            img.src = URL.createObjectURL(event.target.files[0]);
+
+
+        }
+
+        function them() {
+            var manv = document.getElementById('codestaff').value;
+            var tennv = document.getElementById('namestaff').value;
+            var hinhanh = document.getElementById('showimg').src;
+            var sdtnv = document.getElementById('phonestaff').value;
+            var emailnv = document.getElementById('emailstaff').value;
+            var trangthai = document.getElementById('status').value;
+            var mknv = document.getElementById('passstaff').value;
+            var quyen = document.getElementById('slect-permission').value;
+            var number = /^[0-9]+$/;
+            if (manv == null || manv == "") {
+                var d = new Date();
+                manv = Number(d);
+            }
+            else if (!manv.match(number) || manv.length != 13) {
+                alert("Mã nhân viên phải là kiểu số và có độ dài là 13 ký tự! Vui lòng nhập lại!");
+                return false;
+            }
+
+            if (tennv == null || tennv == "") {
+                alert("Tên nhân viên không được để trống! Vui lòng nhập lại!");
+                return false;
+            }
+            else if (emailnv == null || emailnv == "") {
+                alert("Email nhân viên không được để trống! Vui lòng nhập lại!");
+                return false;
+            }
+            else if (sdtnv == null || sdtnv == "") {
+                alert("Số điện thoại nhân viên không được để trống! Vui lòng nhập lại!");
+                return false;
+            } else if (!sdtnv.match(number) || sdtnv.length != 10) {
+                alert("Số điện thoại nhân viên phải là kiểu số và có độ dài là 10 ký tự! Vui lòng nhập lại!");
+                return false;
+            }
+            else if (quyen == "choose") {
+                alert("Vui lòng chọn quyền!");
+                return false;
+            }
+            else if (trangthai == "choose") {
+                alert("Vui lòng chọn trạng thái!");
+                return false;
+            }
+            else if (mknv == null || mknv == "") {
+                alert("Mật khẩu nhân viên không được để trống! Vui lòng nhập lại!");
+                return false;
+            }
+            else {
+                for (var x of list) {
+                    if (x.manv == manv) {
+                        alert("Mã nhân viên đã tồn tại! Vui lòng nhập lại!")
+                        return false;
+                    }
+                }
+            }
+
+            var project = {
+                "manv": manv,
+                "tennv": tennv,
+                "hinhanh": hinhanh,
+                "emailnv": emailnv,
+                "sdtnv": sdtnv,
+                "quyen": quyen,
+                "trangthai": trangthai,
+                "mknv": mknv
+            };
+            list.push(project);
+            localStorage.setItem('Staff', JSON.stringify(list));
+            alert('Thêm thành công')
+        }
+
+        function loaddata() {
+            var x = '';
+            for (let i = 0; i < list.length; i++) {
+                x += ` <tr>
+                                <td>`+ i + `</td>
+                               <td>`+ list[i].manv + `</td>
+                                <td>`+ list[i].tennv + `</td>
+                                <td style="text-align: center;"> <img style="width:50px;"
+                                src="`+ list[i].hinhanh + `" alt=""> </td>
+                                <td>`+ list[i].emailnv + `</td>
+                                <td>`+ list[i].sdtnv + `</td>
+                                <td>`+ list[i].quyen + `</td>
+                                <td>`+ list[i].trangthai + `</td>
+                                <td class="item-icon">
+                                <i onclick="sua(`+ list[i].manv + `)" style="padding-right: 5px;" class="fa-solid fa-pen-to-square"></i><i
+                                style="padding-left: 5px;" class="fa-solid fa-trash-can" onclick="xoa(`+ list[i].manv + `)"></i>
+                                </td>
+                            </tr>
+            `
+            }
+            document.getElementById('item-staff').innerHTML = x;
+            document.getElementById('amount-product').innerHTML = list.length;
+        }
+        loaddata()
+
+        function xoa(ma) {
+            if (confirm("Bạn có chắc muốn xóa không?")) {
+                var index = list.findIndex(x => x.manv == ma);
+                if (index >= 0) {
+                    list.splice(index, 1);
+                }
+                update(list);
+                loaddata();
+            }
+        }
+        function update(list) {
+            localStorage.setItem('Staff', JSON.stringify(list));
+        }
+        function xoaall() {
+            if (confirm("Bạn có muốn xóa tất cả không")) {
+                list.splice(0, list.length);
+                update(list)
+                alert("Xóa tất cả dữ liệu thành công")
+            }
+            loaddata()
+        }
+        function sua(ma) {
+            for (x of list) {
+                if (x.manv == ma) {
+                    document.getElementById('codestaff').value = x.manv;
+                    document.getElementById('namestaff').value = x.tennv;
+                    document.getElementById('phonestaff').value = x.sdtnv;
+                    document.getElementById('emailstaff').value = x.emailnv;
+                    document.getElementById('status').value = x.trangthai;
+                    document.getElementById('passstaff').value = x.mknv;
+                    document.getElementById('slect-permission').value = x.quyen;
+                    document.getElementById('showimg').src = x.hinhanh;
+                }
+            }
+        }
+
+        function lammoi() {
+            document.getElementById('codestaff').innerHTML = "";
+            document.getElementById('namestaff').innerHTML = "";
+            document.getElementById('phonestaff').innerHTML = "";
+            document.getElementById('emailstaff').innerHTML = "";
+            document.getElementById('status').innerHTML = "";
+            document.getElementById('passstaff').innerHTML = "";
+            document.getElementById('slect-permission').innerHTML = "";
+            document.getElementById('showimg').innerHTML = "";
+
+        }
+        function updatenew() {
+            var manv = document.getElementById('codestaff').value;
+            var tennv = document.getElementById('namestaff').value;
+            var hinhanh = document.getElementById('showimg').src;
+            var sdtnv = document.getElementById('phonestaff').value;
+            var emailnv = document.getElementById('emailstaff').value;
+            var trangthai = document.getElementById('status').value;
+            var mknv = document.getElementById('passstaff').value;
+            var quyen = document.getElementById('slect-permission').value;
+            var number = /^[0-9]+$/;
+            if (!manv.match(number) || manv.length != 13) {
+                alert("Mã nhân viên phải là kiểu số và có độ dài là 13 ký tự! Vui lòng nhập lại!");
+                return false;
+            }
+
+            if (tennv == null || tennv == "") {
+                alert("Tên nhân viên không được để trống! Vui lòng nhập lại!");
+                return false;
+            }
+            else if (emailnv == null || emailnv == "") {
+                alert("Email nhân viên không được để trống! Vui lòng nhập lại!");
+                return false;
+            }
+            else if (sdtnv == null || sdtnv == "") {
+                alert("Số điện thoại nhân viên không được để trống! Vui lòng nhập lại!");
+                return false;
+            } else if (!sdtnv.match(number) || sdtnv.length != 10) {
+                alert("Số điện thoại nhân viên phải là kiểu số và có độ dài là 10 ký tự! Vui lòng nhập lại!");
+                return false;
+            }
+            else if (quyen == "choose") {
+                alert("Vui lòng chọn quyền!");
+                return false;
+            }
+            else if (trangthai == "choose") {
+                alert("Vui lòng chọn trạng thái!");
+                return false;
+            }
+            else if (mknv == null || mknv == "") {
+                alert("Mật khẩu nhân viên không được để trống! Vui lòng nhập lại!");
+                return false;
+            }
+            for (x of list) {
+                if (x.manv == manv) {
+                    x.tennv = tennv;
+                    x.sdtnv = sdtnv;
+                    x.emailnv = emailnv;
+                    x.quyen = quyen;
+                    x.trangthai = trangthai;
+                    x.hinhanh = hinhanh
+                    check = true;
+                    break;
+                }
+            }
+            if (check == true) {
+                alert("Cập nhập thông tin thành công!");
+                update(list);
+                loaddata();
+            }
+            else {
+                alert("Cập nhật không thành công");
+            }
+
+        }
+    </script>
+    <script src="/javascript/show.js"></script>
+</section>
+</body>
+
+</html>

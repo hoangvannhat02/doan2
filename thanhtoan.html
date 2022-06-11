@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>thanh toán giỏ hàng</title>
+    <script src="javascript/javascr.js"></script>
+    <script src="javascript/cart.js"></script>
+    <script src="javascript/thanhtoan.js"></script>
+    <link rel="stylesheet" href="css/thanhtoan.css">
+</head>
+
+<body>
+    <section style="max-width: 85%;margin:auto;">
+        <div class="item_pay">
+            <div class="item_pay_left">
+                <h1>anvatchumanh</h1>
+                <div class="pay_header">
+                    <a href="cart.html">Giỏ hàng </a> <i style="font-size: smaller;opacity:0.5;margin:0px 5px;" class="fa-solid fa-angle-right"></i>
+                    <span>Thông tin giao hàng</span>
+                    <p>Thông tin giao hàng</p>
+                </div>
+                <div class="pay_body">
+                    <p>Bạn đã có tài khoản? <a href="">Đăng nhập</a> </p>
+
+                    <div class="name_customer">
+                        <label class="name_lable" for="name_customer"></label>
+                        <input type="text" placeholder="Họ và Tên" id="name_customer">
+                    </div>
+                    <div class="lienhe">
+                        <input id="email_customer" type="text" placeholder="Email" size="60">
+                        <input id="phone_customer" type="text" placeholder="Số điện thoại" size="40">
+                    </div>
+                    <div class="address">
+                        <input id="address_customer" type="text" placeholder="Địa chỉ" size="100">
+                    </div>
+                    <div class="area">
+                        <div class="city">
+                            <label id="lable_area" for="area">Tỉnh / Thành</label>
+                            <select name="area" id="area">
+                                <option value="">Chọn tỉnh / thành</option>
+                                <option value="">Hà Nội</option>
+                                <option value="">Hồ Chí Minh</option>
+                                <option value="">Đà Nẵng</option>
+                                <option value="">An Giang</option>
+                                <option value="">Hải Phòng</option>
+                                <option value="">Cần Thơ</option>
+                                <option value="">Bà Rịa - Vũng Tàu</option>
+                                <option value="">Bắc Giang</option>
+                                <option value="">Bắc Kạn</option>
+                                <option value="">Bạc Liêu</option>
+                                <option value="">Bắc Ninh</option>
+                                <option value="">Bến Tre</option>
+                                <option value="">Bình Định</option>
+                                <option value="">Bình Dương</option>
+                                <option value="">Bình Phước</option>
+                                <option value="">Bình Thuận</option>
+                                <option value="">Cà Mau</option>
+                                <option value="">Cao Bằng</option>
+                                <option value="">Đắk Lắk</option>
+                                <option value="">Đắk Nông</option>
+                                <option value="">Điện Biên</option>
+                                <option value="">Đồng Nai</option>
+                                <option value="">Đồng Tháp</option>
+                                <option value="">Gia Lai</option>
+                                <option value="">Hà Giang</option>
+                                <option value="">Hà Nam</option>
+                                <option value="">Hà Tĩnh</option>
+                                <option value="">Hải Dương</option>
+                                <option value="">Hậu Giang</option>
+                                <option value="">Hòa Bình</option>
+                                <option value="">Hưng Yên</option>
+                                <option value="">Khánh Hòa</option>
+                                <option value="">Kiên Giang</option>
+                                <option value="">Kon Tum</option>
+                                <option value="">Lai Châu</option>
+                                <option value="">Lâm Đồng</option>
+                                <option value="">Lạng Sơn</option>
+                                <option value="">Lào Cai</option>
+                                <option value="">Long An</option>
+                                <option value="">Nam Định</option>
+                                <option value="">Nghệ An</option>
+                                <option value="">Ninh Bình</option>
+                                <option value="">Ninh Thuận</option>
+                                <option value="">Phú Thọ</option>
+                                <option value="">Quảng Bình</option>
+                                <option value="">Quảng Nam</option>
+                                <option value="">Quảng Ngãi</option>
+                                <option value="">Quảng Ninh</option>
+                                <option value="">Quảng Trị</option>
+                                <option value="">Sóc Trăng</option>
+                                <option value="">Sơn La</option>
+                                <option value="">Tây Ninh</option>
+                                <option value="">Thái Bình</option>
+                                <option value="">Thái Nguyên</option>
+                                <option value="">Thanh Hóa</option>
+                                <option value="">Thừa Thiên Huế</option>
+                                <option value="">Tiền Giang</option>
+                                <option value="">Trà Vinh</option>
+                                <option value="">Tuyên Quang</option>
+                                <option value="">Vĩnh Long</option>
+                                <option value="">Vĩnh Phúc</option>
+                                <option value="">Yên Bái</option>
+                                <option value="">Phú Yên</option>
+                            </select>
+                        </div>
+                        <div class="district">
+                            <label id="district_lable" for="district">Quận / huyện</label>
+                            <select name="" id="district">
+                                <option value="">Chọn quận / huyện</option>
+                            </select>
+                        </div>
+                        <div class="commune">
+                            <label id="commune_lable" for="commune">Phường xã</label>
+                            <select name="" id="commune">
+                                <option value="">Chọn Phường / Xã</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="ship">
+                        <span>
+                            Phương thức vận chuyển
+                        </span>
+                        <div>
+                            <i class="fa-solid fa-truck-fast"> </i> Giao hàng tận nơi- Phí ship sẽ được thanh toán sau
+                            bởi Đơn vị giao hàng. <span>0đ</span>
+                        </div>
+                    </div>
+                    <div class="method_pay">
+                        <p>Phương thức thanh toán</p>
+                        <div>
+                            <div class="method_pay_header">
+                                <input class="input_radio" type="radio" value=""><img
+                                    src="img/anhthanhtoan/thanhtoan.svg" alt=""> <span>Thanh toán khi giao hàng
+                                    (COD)</span>
+                            </div>
+                            <div class="content_input_radio">
+                                Shop chĩ nhận COD( Thu hộ) trong nội thành TPHCM
+                            </div>
+                            <div class="method_pay_bank">
+                                <input class="input_radio" type="radio" value=""><img
+                                    src="img/anhthanhtoan/nganhang.svg" alt=""> <span>Thanh toán khi giao hàng
+                                    (COD)</span>
+                            </div>
+                            <div class="messenger_pay">
+                                <div>
+                                    1. Shop sẽ liên hệ số điện thoại đặt hàng để xác nhận đơn hàng.
+                                    2. XIN VUI LÒNG NHẮN TIN QUA FACEBOOK với nội dung: Mã đơn hàng và Số Điện Thoại (
+                                    ĐƠN HÀNG TẶNG ).
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="last_pay">
+                        <a href="cart.html">Giỏ hàng</a>
+                        <button>Hoàn tất đơn hàng</button>
+                    </div>
+                    <hr>
+                    <div style="text-align: center; padding: 10px;color: #999999;font-size: smaller;">
+                        Powered by Haravan
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item_pay_right">
+            <div class="item_product_cart">
+                <table>
+                    <tbody id="payment">
+                        <!-- <tr class="table_product">
+                            <td style="width:20%;position: relative;">
+                                <img class="img_product"
+                                    src="img/anhquangcao/Bánh kẹo nhập khẩu/banhmihoacucphap.webp" alt="">
+                                <div class="quantily_product">
+                                    1
+                                </div>
+                            </td>
+                            <td style="width:60%;padding-left: 20px;color: #737373;font-size: larger;">
+                                Mận xanh tam hoa sấy muối ớt
+                            </td>
+                            <td style="width:20%;text-align: right;color: rgba(255, 0, 0, 0.801);">
+                                105,000₫
+                            </td>
+                        </tr>
+                        <tr class="table_product">
+                            <td style="width:20%;position: relative;">
+                                <img class="img_product"
+                                    src="img/anhquangcao/Bánh kẹo nhập khẩu/banhmihoacucphap.webp" alt="">
+                                <div class="quantily_product">
+                                    1
+                                </div>
+                            </td>
+                            <td style="width:60%;padding-left: 20px;color: #737373;font-size: larger;">
+                                Mận xanh tam hoa sấy muối ớt
+                            </td>
+                            <td style="width:20%;text-align: right;color: rgba(255, 0, 0, 0.801);">
+                                105,000₫
+                            </td>
+                        </tr>
+                        <tr class="table_product">
+                            <td style="width:20%;position: relative;">
+                                <img class="img_product"
+                                    src="img/anhquangcao/Bánh kẹo nhập khẩu/banhmihoacucphap.webp" alt="">
+                                <div class="quantily_product">
+                                    1
+                                </div>
+                            </td>
+                            <td style="width:60%;padding-left: 20px;color: #737373;font-size: larger;">
+                                Mận xanh tam hoa sấy muối ớt
+                            </td>
+                            <td style="width:20%;text-align: right;color: rgba(255, 0, 0, 0.801);">
+                                105,000₫
+                            </td>
+                        </tr> -->
+                    </tbody>
+                </table>
+                <hr style="color:#737373;opacity:0.5;margin:20px 0px;">
+                <div class="code_discount">
+                    <label class="code_lable" for="code">Mã giảm giá</label>
+                    <input type="text" id="code" placeholder="Mã giảm giá">
+                </div>
+                <div class="btn_use">
+                    <button onclick="check()">Sử dụng</button>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <hr style="color:#737373;opacity:0.5;margin:15px 0px;">
+                <div class="price_product">
+                    <div>
+                        Tạm tính <span id="tamtinh">0₫</span>
+                    </div>
+                    <div>
+                        Phí vận chuyển <span>Miễn phí</span>
+                    </div>
+                </div>
+                <hr style="color:#737373;opacity:0.5;margin:15px 0px;">
+                <div class="sum_price">
+                    Tổng cộng <span> <span style="color:#737373;font-size: smaller;">VND</span> <span id="tongtien">0₫</span> </span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        showproduct();
+    </script>
+</body>
+
+</html>

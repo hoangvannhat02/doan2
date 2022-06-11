@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/fontawesome-free-6.1.1-web/css/all.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="/css/quantri.css">
+</head>
+
+<body>
+    <section>
+        <div class="header_home">
+            <i onclick="showmenu()" id="icon-menu" class="fa-solid fa-bars"></i>
+            <div style="padding-left: 100px;" class="header_home_left">
+                <!-- <marquee style="line-height: 200%;color:blue;font-size: 40px;" behavior="" direction="">Nhìn vào ngày mai hãy trở thành phiên bản tốt hơn của hiện tại!!!</marquee> -->
+            </div>
+            <div class="header_home_right">
+                <ul class="welcome">
+                    <li style="padding: 10px 0px 0px 10px;">
+                        Xin chào, <span>ông chủ</span><i class="fa-solid fa-caret-down"></i>
+                        <ul class="taikhoan">
+                            <li>
+                                <a href="">Tài khoản</a>
+                            </li>
+                            <li>
+                                <a href="/dangnhap.html">Đăng xuất</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="item-menu-bar">
+            <i onclick="hidemenu()" class="fa-solid fa-xmark"></i>
+            <div style="margin-top: 40px;">
+                <i class="fa-solid fa-globe"></i><a href="">Tổng quan</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-box-tissue"></i><a href="loaisp.html">Loại sản phẩm</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-truck"></i><a href="nhacungcap.html">Nhà cung cấp</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-users"></i><a href="khachhang.html">Khách hàng</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-user"></i><a href="nhanvien.html">Nhân viên</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-cart-arrow-down"></i> <a href="hoadonnhap.html">Hóa đơn nhập</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-cart-shopping"></i><a href="hoadonban.html">Hóa đơn bán</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-gear"></i><a href="">Thiết lập</a>
+            </div>
+
+        </div>
+    </section>
+    <div class="gird item_body_mes">
+        <div class="row">
+            <div class="col l-1 m-0 c-0">
+                <div style="background-color: rgba(0, 0, 0, 0.5);" class="title-left">
+                    <i class="fa-solid fa-globe"></i><a href="">Tổng quan</a>
+                </div>
+                <div class="title-left">
+                    <i class="fa-solid fa-box-tissue"></i><a href="loaisp.html">Loại sản phẩm</a>
+                </div>
+                <div class="title-left">
+                    <i class="fa-brands fa-product-hunt"></i><a href="sanpham.html"> Sản phẩm</a>
+                </div>
+                <div class="title-left">
+                    <i class="fa-solid fa-truck"></i><a href="nhacungcap.html">Nhà cung cấp</a>
+                </div>
+                <div class="title-left">
+                    <i class="fa-solid fa-users"></i><a href="khachhang.html">Khách hàng</a>
+                </div>
+                <div class="title-left">
+                    <i class="fa-solid fa-user"></i><a href="nhanvien.html">Nhân viên</a>
+                </div>
+                <div class="title-left">
+                    <i class="fa-solid fa-cart-arrow-down"></i> <a href="hoadonnhap.html">Hóa đơn nhập</a>
+                </div>
+                <div class="title-left">
+                    <i class="fa-solid fa-cart-shopping"></i><a href="hoadonban.html">Hóa đơn bán</a>
+                </div>
+                <div class="title-left">
+                    <i class="fa-solid fa-gear"></i><a href="">Thiết lập</a>
+                </div>
+            </div>
+            <div class="col l-11 m-12 c-12">
+                <div class="item_title">
+                    <i class="fa-solid fa-arrow-up-right-dots"></i> <span>Hoạt động hôm nay</span>
+                    <hr>
+                </div>
+                <div class="col l-12 m-12 c-12">
+                    <div class="row">
+                        <div class="col l-4 m-12 c-12 box_content_product">
+                            <div id="box_title">
+                                <div>
+                                    <i class="fa-solid fa-arrow-up-right-dots"></i>
+                                </div> 
+                                <div>
+                                    Tiền bán hàng <br>
+                                    <span id="tienbanhang">
+                                        0đ
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="under_box_title">
+                                <div>
+                                    <span><i class="fa-solid fa-briefcase"></i> Hoạt động</span> <span>Tổng cộng</span>
+                                </div>
+                                <div>
+                                    Tổng tiền bán <span id="tongtienban">0đ</span>
+                                </div>
+                                <div>
+                                    Số đơn hàng <span id="sodonhang">0</span>
+                                </div>
+                                <div>
+                                    Số sản phẩm <span id="sosanpham"></span>
+                                </div>
+                                <div>
+                                    Khách trả hàng <span id="khachtrahang" >0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-12 c-12 box_content_product">
+                            <div id="box_title2">
+                                <div>
+                                    <i class="fa-solid fa-cloud"></i>
+                                </div> 
+                                <div>
+                                    Số đơn hàng: <span id="sodonhangnhap">0</span> <br>
+                                    <span>
+                                        Số sản phẩm: <span id="sosanphamnhap">0</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="under_box_title item_warehouse">
+                                <div>
+                                    <span><i class="fa-solid fa-warehouse"></i> Thông tin kho</span> <span>Tổng cộng</span>
+                                </div>
+                                <div>
+                                    Số lượng mặt hàng tồn <span id="slhangton">0</span>
+                                </div>
+                                <div>
+                                   Mặt hàng sắp hết <span id="slhangsaphet">0</span>
+                                </div>
+                                <div>
+                                    Mặt hàng đã hết <span id="slhanghet">0</span>
+                                </div>
+                                <div>
+                                    Vượt định mức <span id="vuotdinhmuc" >0</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-4 m-12 c-12 box_content_product">
+                            <div style="background-color: rgba(255, 0, 0, 0.616);" id="box_title">
+                                <div>
+                                    <i class="fa-solid fa-users"></i>
+                                </div> 
+                                <div>
+                                    Khách trả hàng <br>
+                                    <span class="khachtra">
+                                        0
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="under_box_title item_user">
+                                <div>
+                                    <span><i class="fa-solid fa-sitemap"></i> Thông tin sản phẩm</span> <span>Tổng cộng</span>
+                                </div>
+                                <div>
+                                    Sản phẩm <span id="sanpham">0</span>
+                                </div>
+                                <div>
+                                    Chưa có giá bán <span id="chuagia">0</span>
+                                </div>
+                                <div>
+                                    Chưa nhập giá mua <span id="chuamua">0</span>
+                                </div>
+                                <div>
+                                    Hàng chưa phân loại <span id="khachtrahang" >0</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var listhh = JSON.parse(localStorage.getItem('Billoutput'))
+        function tienban(){
+            var sum = 0;
+            var sp = 0;
+            for(x of listhh){
+                sum += Number(x.sl) * Number(x.giaban);
+                sp += Number(x.sl);
+            }
+            document.getElementById('tienbanhang').innerHTML=sum + "đ";
+            document.getElementById('tongtienban').innerHTML=sum + "đ";
+            document.getElementById('sodonhang').innerHTML = listhh.length;
+            document.getElementById('sosanpham').innerHTML = sp;
+        }
+        tienban()
+        var listhdn = JSON.parse(localStorage.getItem('Billinput'))
+        function hangnhap(){
+            var sosp = 0;
+            var sphet = 0;
+            var het = 0;
+            for(x of listhdn){
+                sosp += Number(x.sl);
+                if(x.sl<=10){
+                    sphet +=1;
+                }
+                else if(x.sl == 0){
+                    het+=1;
+                }
+            }
+            document.getElementById('sodonhangnhap').innerHTML = listhdn.length;
+            document.getElementById('sosanphamnhap').innerHTML = sosp;
+            document.getElementById('slhangton').innerHTML = sosp;
+            document.getElementById('slhangsaphet').innerHTML = sphet;
+            document.getElementById('slhanghet').innerHTML = het;
+            console.log(listhdn.length);
+        }
+        hangnhap()
+    </script>
+    <script src="/javascript/show.js"></script>
+    </section>
+</body>
+
+</html>

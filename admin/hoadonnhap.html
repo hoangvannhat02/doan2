@@ -1,0 +1,460 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/fontawesome-free-6.1.1-web/css/all.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="stylesheet" href="/css/quantri.css">
+</head>
+
+<body onload="getdate()">
+    <section>
+        <div class="header_home">
+            <i onclick="showmenu()" id="icon-menu" class="fa-solid fa-bars"></i>
+            <div class="header_home_left">
+            </div>
+            <div class="header_home_right">
+                <ul class="welcome">
+                    <li style="padding: 10px 0px 0px 10px;">
+                        Xin chào, <span>ông chủ</span><i class="fa-solid fa-caret-down"></i>
+                        <ul class="taikhoan">
+                            <li>
+                                <a href="">Tài khoản</a>
+                            </li>
+                            <li>
+                                <a href="">Đăng xuất</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="item-menu-bar">
+            <i onclick="hidemenu()" class="fa-solid fa-xmark"></i>
+            <div style="margin-top: 40px;">
+                <i class="fa-solid fa-globe"></i><a href="">Tổng quan</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-box-tissue"></i><a href="loaisp.html">Loại sản phẩm</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-truck"></i><a href="nhacungcap.html">Nhà cung cấp</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-users"></i><a href="khachhang.html">Khách hàng</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-user"></i><a href="nhanvien.html">Nhân viên</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-cart-arrow-down"></i> <a href="hoadonnhap.html">Hóa đơn nhập</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-cart-shopping"></i><a href="hoadonban.html">Hóa đơn bán</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-gear"></i><a href="">Thiết lập</a>
+            </div>
+
+        </div>
+    </section>
+    <div class="gird item_body_mes">
+        <div class="row">
+            <div class="col l-1 m-0 c-0">
+                <div class="title-left">
+                    <i class="fa-solid fa-globe"></i><a href="trangquantri.html">Tổng quan</a>
+                </div>
+                <div class="title-left">
+                    <i class="fa-solid fa-box-tissue"></i><a href="loaisp.html">Loại sản phẩm</a>
+                </div>
+                <div class="title-left">
+                    <i class="fa-brands fa-product-hunt"></i><a href="sanpham.html"> Sản phẩm</a>
+                </div>
+                <div class="title-left">
+                    <i class="fa-solid fa-truck"></i><a href="nhacungcap.html">Nhà cung cấp</a>
+                </div>
+                <div class="title-left">
+                    <i class="fa-solid fa-users"></i><a href="khachhang.html">Khách hàng</a>
+                </div>
+                <div class="title-left">
+                    <i class="fa-solid fa-user"></i><a href="nhanvien.html">Nhân viên</a>
+                </div>
+                <div style="background-color: rgba(0, 0, 0, 0.5);" class="title-left">
+                    <i class="fa-solid fa-cart-arrow-down"></i> <a href="hoadonnhap.html">Hóa đơn nhập</a>
+                </div>
+                <div class="title-left">
+                    <i class="fa-solid fa-cart-shopping"></i><a href="hoadonban.html">Hóa đơn bán</a>
+                </div>
+                <div class="title-left">
+                    <i class="fa-solid fa-gear"></i><a href="">Thiết lập</a>
+                </div>
+            </div>
+            <div class="col l-11 m-12 c-12">
+                <div class="col l-12 m-12 c-12">
+                    <div class="row">
+                        <div class="col l-4 m-12 c-12">
+                            <div class="item_title">
+                                <i class="fa-solid fa-file-pen"></i> <span>Nhập thông tin hóa đơn nhập</span>
+                                <hr>
+                            </div>
+                            <div class="input_product">
+                                <form action="">
+                                    <label for="codebillin">Mã hóa đơn nhập:</label>
+                                    <input type="text" id="codebillin" placeholder="Nhập mã hóa đơn nhập...">
+                                    <label for="slect-staff">
+                                        Nhân viên:
+                                    </label>
+                                    <select name="" id="slect-staff">
+                                        <option value="chonnhanvien">--Chọn nhân viên--</option>
+                                        <option value="Hoàng Văn Nhật">Hoàng Văn Nhật</option>
+                                    </select>
+                                    <label for="slect-supplier">
+                                        Nhà cung cấp:
+                                    </label>
+                                    <select name="" id="slect-supplier">
+                                        <option value="chonnhacungcap">--Chọn nhà cung cấp--</option>
+                                        <option value="hoãnguansang">Hoàng Xuân Sáng</option>
+                                    </select>
+                                    <label for="codeproduct">Mã sản phẩm:</label>
+                                    <input type="text" id="codeproduct"
+                                        placeholder="Nhập mã sản phẩm, nếu không nhập sẽ sinh tự động...">
+                                    <label for="nameproduct">Tên sản phẩm:</label>
+                                    <input type="text" id="nameproduct" placeholder="Nhập tên sản phẩm">
+                                    <label for="amountproduct">Số lượng:</label>
+                                    <input type="number" id="amountproduct" value="1" placeholder="Nhập số lượng">
+                                    <label for="priceinput">Giá nhập:</label>
+                                    <input type="number" id="priceinput" placeholder="Giá nhập">
+                                    <label for="dateinput">Ngày nhập:</label>
+                                    <input type="text" id="dateinput" placeholder="Tự nhập theo ngày hiện tại">
+                                    <hr>
+                                    <button onclick="them()" class="btnadd">Thêm hóa đơn nhập</button>
+                                    <button onclick="lammoi()" class="btninput">Nhập mới</button>
+                                    <button onclick="updatenew()" class="btnupdate">Cập nhật thông tin</button>
+                                </form>
+
+                            </div>
+                        </div>
+                        <div class="col l-8 m-12 c-12">
+                            <div class="item_title">
+                                <i class="fa-solid fa-file-pen"></i> <span>Danh sách hóa đơn nhập</span>
+                                <hr>
+                            </div>
+                            <div class="item-seach">
+                                <input style="width:80%" type="text" placeholder="Nhập mã hóa đơn nhập...">
+                                <button> <i class="fa-solid fa-magnifying-glass"></i> Tìm kiếm</button>
+                            </div>
+                            <div class="table-product">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>STT</th>
+                                            <th>Mã hóa đơn nhập</th>
+                                            <th>Tên nhân viên</th>
+                                            <th>Nhà cung cấp</th>
+                                            <th>Mã sản phẩm</th>
+                                            <th>Tên sản phẩm</th>
+                                            <th>Số lượng</th>
+                                            <th>Giá</th>
+                                            <th>Ngày nhập
+                                            </th>
+                                            <th> Các thao tác</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="item-hdn">
+
+                                    </tbody>
+                                </table>
+                                <div class="delete-all">
+                                    <button onclick="xoaall()"><i class="fa-solid fa-trash-can"></i> Xóa tất cả</button>
+                                </div>
+                                <div class="amount-product">
+                                    Số lượng hóa đơn: <span id="amount-product"></span>
+                                    <br>
+                                    <span>
+                                        Tổng tiền: <span id="tatol-price"></span>đ
+                                    </span>
+                                    <div style="transform: translateY(-50%);" class="page-product">
+                                        <button><i class="fa-solid fa-angle-left"></i></button>
+                                        <button>1</button>
+                                        <button>2</button>
+                                        <button>3</button>
+                                        <button><i class="fa-solid fa-angle-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+    <script>
+        function loadfile(event) {
+            var img = document.getElementById('showimg');
+            img.src = URL.createObjectURL(event.target.files[0]);
+        }
+
+        // var x = document.getElementById('slect-staff').options.length;
+        // var e = document.getElementById('slect-staff');
+        // function addd() {
+        //     for (let i = 1; i < list.length; i++)
+        //         var u = new Option(list[i].tennv, i);
+        //     e.options.add(u)
+        // }
+        // addd()
+        function getdate() {
+            var daynow = new Date().toLocaleDateString();
+            var timenow = new Date().toLocaleTimeString();
+            var ngaynhap = daynow + " " + timenow;
+            document.getElementById('dateinput').value = ngaynhap.toString();
+        }
+
+        var list = JSON.parse(localStorage.getItem('Billinput')) || [];
+        var listhh = JSON.parse(localStorage.getItem('Product')) || [];
+        function them() {
+            var mahdn = document.getElementById('codebillin').value;
+            var nhanvien = document.getElementById('slect-staff').value;
+            var nhacc = document.getElementById('slect-supplier').value;
+            var masp = document.getElementById('codeproduct').value;
+            var tensp = document.getElementById('nameproduct').value;
+            var sl = document.getElementById('amountproduct').value;
+            var gianhap = document.getElementById('priceinput').value;
+            var ngaynhap = document.getElementById('dateinput').value;
+            var number = /^[0-9]+$/;
+            if (mahdn == null || mahdn == "") {
+                var d = new Date();
+                mahdn = Number(d);
+            }
+            else if (!mahd.match(number) || mahd.length != 13) {
+                alert("Mã hóa đơn phải là kiểu số và có độ dài là 13 ký tự! Vui lòng nhập lại!");
+                return false;
+            }
+            if (masp == null || masp == "") {
+                var d = new Date();
+                masp = Number(d);
+            }
+            else if (!masp.match(number) || masp.length != 13) {
+                alert("Mã sản phẩm phải là kiểu số và có độ dài là 13 ký tự! Vui lòng nhập lại!");
+                return false;
+            }
+
+            if (nhanvien == "choose") {
+                alert("Vui lòng chọn nhân viên!");
+                return false;
+            }
+            else if (nhacc == "choose") {
+                alert("Vui lòng chọn nhà cung cấp!");
+                return false;
+            }
+            else if (tensp == "" || tensp == null) {
+                alert("Vui lòng nhập tên sản phẩm");
+                return false;
+            }
+            else if (sl <= 0) {
+                alert("Vui lòng nhập số lượng lớn hơn 0");
+                return false;
+            }
+            else if (gianhap <= 0 || gianhap == null) {
+                alert("Vui lòng nhập số lượng lớn hơn 0");
+                return false;
+            }
+            else {
+                for (var x of list) {
+                    if (x.mahdn == mahdn) {
+                        alert("Mã hóa đơn đã tồn tại! Vui lòng nhập lại!")
+                        return false;
+                    }
+                }
+                // for(p of listhh){
+                //     if(p.masp == masp ){
+                //         p.sl += sl;
+                //         break;
+                //     }
+                // }
+            }
+            var product = {
+                'loaisanpham': "",
+                'nhacungcap': nhacc,
+                'masanpham': masp,
+                'tensanpham': tensp,
+                'hinhanh': "",
+                'soluong': sl,
+                'giaban': ""
+            }
+            var project = {
+                "mahdn": mahdn,
+                "nhanvien": nhanvien,
+                "nhacc": nhacc,
+                "masp": masp,
+                "tensp": tensp,
+                "sl": sl,
+                "gianhap": gianhap,
+                "ngaynhap": ngaynhap
+            };
+            listhh.push(product);
+            localStorage.setItem('Product', JSON.stringify(listhh))
+            list.push(project);
+            localStorage.setItem('Billinput', JSON.stringify(list));
+            alert('Thêm thành công')
+        }
+        function loadnameproduct() {
+            var y = document.getElementById('codeproduct').value
+            for (x of listhh) {
+                if (x.masp == y) {
+                    document.getElementById('nameproduct').focus.value = x.tensanpham
+                }
+            }
+        }
+        loadnameproduct()
+        function loaddata() {
+            var x = '';
+            var sum = 0;
+            for (let i = 0; i < list.length; i++) {
+                sum += list[i].sl * list[i].gianhap
+                x += ` <tr>
+                            <td style="text-align: center;">`+ i + `</td>
+                            <td>`+ list[i].mahdn + `</td>
+                            <td>`+ list[i].nhanvien + `</td>
+                            <td>`+ list[i].nhacc + `</td>
+                            <td>`+ list[i].masp + `</td>
+                            <td>`+ list[i].tensp + `</td>
+                            <td>`+ list[i].sl + `</td>
+                            <td>`+ list[i].gianhap + `</td>
+                            <td>`+ list[i].ngaynhap + `</td>                        
+                            <td class="item-icon">
+                            <i onclick="sua(`+ list[i].mahdn + `)" style="padding-right: 5px;" class="fa-solid fa-pen-to-square"></i><i
+                            style="padding-left: 5px;" class="fa-solid fa-trash-can" onclick="xoa(`+ list[i].mahdn + `)"></i>
+                            </td>
+                        </tr>
+            `
+            }
+            document.getElementById('item-hdn').innerHTML = x;
+            document.getElementById('amount-product').innerHTML = list.length;
+            document.getElementById('tatol-price').innerHTML = sum;
+        }
+        loaddata()
+
+        function xoa(ma) {
+            if (confirm("Bạn có chắc muốn xóa không?")) {
+                var index = list.findIndex(x => x.mahdn == ma);
+                if (index >= 0) {
+                    list.splice(index, 1);
+                }
+                update(list);
+                loaddata();
+            }
+        }
+        function update(list) {
+            localStorage.setItem('Billinput', JSON.stringify(list));
+        }
+        function xoaall() {
+            if (confirm("Bạn có muốn xóa tất cả không>")) {
+                list.splice(0, list.length);
+                update(list)
+                alert("Xóa tất cả dữ liệu thành công")
+            }
+            loaddata()
+        }
+        function sua(ma) {
+            for (x of list) {
+                if (x.mahdn == ma) {
+                    document.getElementById('codebillin').value = x.mahdn;
+                    document.getElementById('slect-staff').value = x.nhanvien;
+                    document.getElementById('slect-supplier').value = x.nhacc;
+                    document.getElementById('codeproduct').value = x.masp;
+                    document.getElementById('nameproduct').value = x.tensp;
+                    document.getElementById('amountproduct').value = x.sl;
+                    document.getElementById('priceinput').value = x.gianhap;
+                    document.getElementById('dateinput').value = x.ngaynhap;
+                }
+            }
+        }
+
+        function lammoi() {
+            document.getElementById('codebillin').value = "";
+            document.getElementById('slect-staff').value = "";
+            document.getElementById('slect-supplier').value = "";
+            document.getElementById('codeproduct').value = "";
+            document.getElementById('nameproduct').value = "";
+            document.getElementById('amountproduct').value = "";
+            document.getElementById('priceinput').value = "";
+            document.getElementById('dateinput').value = "";
+        }
+        function updatenew() {
+            var mahdn = document.getElementById('codebillin').value;
+            var nhanvien = document.getElementById('slect-staff').value;
+            var nhacc = document.getElementById('slect-supplier').value;
+            var masp = document.getElementById('codeproduct').value;
+            var tensp = document.getElementById('nameproduct').value;
+            var sl = document.getElementById('amountproduct').value;
+            var gianhap = document.getElementById('priceinput').value;
+            var ngaynhap = document.getElementById('dateinput').value;
+            var check = true;
+            var number = /^[0-9]+$/;
+            if (masp == null || masp == "") {
+                var d = new Date();
+                masp = Number(d);
+            }
+            else if (!masp.match(number) || masp.length != 13) {
+                alert("Mã sản phẩm phải là kiểu số và có độ dài là 13 ký tự! Vui lòng nhập lại!");
+                return false;
+            }
+
+            if (nhanvien == "choose") {
+                alert("Vui lòng chọn nhân viên!");
+                return false;
+            }
+            else if (nhacc == "choose") {
+                alert("Vui lòng chọn nhà cung cấp!");
+                return false;
+            }
+            else if (tensp == "" || tensp == null) {
+                alert("Vui lòng nhập tên sản phẩm");
+                return false;
+            }
+            else if (sl <= 0) {
+                alert("Vui lòng nhập số lượng lớn hơn 0");
+                return false;
+            }
+            else if (gianhap <= 0 || gianhap == null) {
+                alert("Vui lòng nhập số lượng lớn hơn 0");
+                return false;
+            }
+            for (var x of listhh) {
+                if (x.masp == masp) {
+                    alert("Mã sản phẩm đã tồn tại! Vui lòng nhập lại!")
+                    return false;
+                }
+            }
+            for (x of list) {
+                if (x.mahdn == mahdn) {
+                    x.nhanvien = nhanvien;
+                    x.nhacc = nhacc;
+                    x.masp = masp;
+                    x.tensp = tensp;
+                    x.sl = sl;
+                    x.gianhap = gianhap;
+                    x.ngaynhap = ngaynhap;
+                    check = true;
+                    break;
+                }
+            }
+            if (check) {
+                update(list);
+                alert("Cập nhập thông tin thành công!");
+                loaddata();
+            }
+            else {
+                alert("Cập nhật không thành công");
+            }
+        }
+    </script>
+    <script src="/javascript/show.js"></script>
+    </section>
+</body>
+
+</html>

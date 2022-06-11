@@ -1,0 +1,70 @@
+.item_register{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: nowrap;
+}
+.widt_register{
+    width: 100%;
+}
+.link_homepage div{
+    font-size: 30px;
+}
+
+.item_register button{
+    padding: 15px 20px;
+    background-color: #f08b18;
+    color: #fff;
+    text-align: center;
+    border: none;
+    font-size: larger;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.item_register > span{
+    margin-left: 30px;
+    text-decoration: underline;
+    color: #999999;
+}
+
+.item_register > span > a:hover{
+    color: #f08b18 !important;
+}
+
+.form_register label{
+    color: rgb(51, 48, 48);
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.title_register{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+.form_register{
+    margin-bottom: 20px;
+    width: 49%;
+}
+
+.form_register input{
+    outline: none;
+    width: 100%;
+    padding: 10px 20px;
+    font-size:16px;
+    border-radius: 5px;
+    border: 1px #ebebeb solid !important;
+}
+
+.form_register > input:focus{
+    border: 2px solid blue !important
+}
+
+.widt_register > span{
+    margin-left: 30px;
+    text-decoration: underline;
+    color: #999999;
+}
